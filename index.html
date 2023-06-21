@@ -28,18 +28,20 @@ body {
     border :0.05px solid lightgray ;
     display :flex ;
     justify-content :center ;
+    overflow :hidden ;
     align-items :center ;
   }
   section {
     position :relative ;
-    width :250px ;
+    width :280px ;
     height :100px;
-    background :white ;
+    background : #43cbff ;
     border-radius :10px ;
     display :flex;
     align-items :center;
-    gap:0px ;
-    transition :.5s ;
+    grid-gap:0px ;
+    transition :.1s ;
+    
   }
   img{
     position :relative ;
@@ -51,12 +53,11 @@ body {
     transition :.5s ;
     z-index :1 ;
   }
-  .text{
+  .view {
     position :relative ;
     width :200px ;
     height :180px ;
     font-weight :bold ;
-    
     background :;
     display :flex ;
     align-items :center ;
@@ -65,41 +66,78 @@ body {
   a{
     position :relative ;
     display :none ;
+    transition :.5s ;
+  }
+  .text{
+    right :0px ;
+    position :relative ;
+    width :0px ;
+    height :0px ;
+    background : ;
+    display :none;
+    transition :.5s ;
   }
   section:hover {
     width :100%;
     height :200px;
-    gap:30px ;
+    gap:0px ;
     border-radius :0px;
+    
   }
   section:hover img{
     position :relative ;
-    width :100px;
-    height :100px ;
+    width :80px;
+    height :80px ;
     left :10px ;
+     border-radius :10px ;
   }
   section:hover a{
     position :relative ;
+    width :100px;
+    height :20px ;
+    left :20px;
+    border-radius :50px ;
+    justify-content :center ;
     display :flex ;
+    top:0%;
+    background :red ;
+    font-size :10px ;
+    color :white ;
+    text-decoration :none ;
+    align-items :center ;
   }
-  section:hover .text {
-    display :none;
+  section:hover .view {
+    
+    display :none ;
   }
-  
+  section:hover .text{
+    position :relative;
+    
+    width :100%;
+    height :200px;
+    display :grid ;
+    background-image :linear-gradient(120deg,#43cbff 30%,#7367f0 );
+    background :;
+  }
 </style>
 
 <body>
-  <nav>earn_from_home_1100</nav>
- <main>
-  <section>
-   <img src="rush.png">
-   <a href="https://rushbyhike.app.link/i4Zpw9ibGAb">link</a> 
-   <div class="text">VIEW
-   </div>
-  </section> 
- </main>
- 
+<nav>earn_from_home_1100</nav>
+  <main>
+     <section>
+       <img src="rush.png">
+       <div class="view">Day/100$</div>
+       <div class="text">
+         <ul>
+           <li>Earn Money</li>
+           <li>Instead Withdrawal</li>
+           <li>Gift Card Purchase</li>
+           <li>Quick Polls</li>
+           <li>Many Tasks</li>
+         </ul>
+         <a href="https://rushbyhike.app.link/i4Zpw9ibGAb">Download</a>
+       </div>
+     </section>
+   </main>
 </body>
-
 </html>
-
